@@ -3,7 +3,7 @@ extends Node3D
 @export var player : CharacterBody3D
 
 var sizeBig = true
-var targetScale = 5
+var targetScale = 3
 
 func _physics_process(delta):
 	
@@ -27,7 +27,7 @@ func _physics_process(delta):
 			targetScale = 1
 			sizeBig = false
 		else:
-			targetScale = 5
+			targetScale = 3
 			sizeBig = true
 	
 	player.scale.x = (targetScale + player.scale.x) / 2
